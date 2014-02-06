@@ -5,11 +5,11 @@ $b = 10;
 $c = '10';
 
 if ($a == $b) {
-	echo "$a is equal to $b";
+	echo "$a is equal to $b\n";
 }
 
 if ($a != $b) {
-	echo "$a is not equal to $b";
+	echo "$a is not equal to $b\n";
 }
 
 if ($a < $b) {
@@ -47,7 +47,7 @@ if ($b != $c) {
 	echo "$b is not equal to $c\n";
 }
 
-if ($b !=== $c) {
+if ($b !== $c) {
 	echo "$b is not identical to $c\n";
 }
 
