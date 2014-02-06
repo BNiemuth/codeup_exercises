@@ -46,3 +46,9 @@ if ($b === $c) {
 if ($b != $c) {
 	echo "$b is not equal to $c\n";
 }
+
+if ($b !=== $c) {
+	echo "$b is not identical to $c\n";
+}
+
+?>
