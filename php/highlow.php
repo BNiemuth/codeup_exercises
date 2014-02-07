@@ -4,6 +4,8 @@
 
 $rand = rand(1, 100);
 
+$tries = 0;
+
 //Ask for user's input.
 
 do {
@@ -14,6 +16,7 @@ do {
 
 //If user's guess is less than the number, output "HIGHER".
 	
+	$tries++;
 
 	if ($guess == 37) {fwrite(STDOUT, "PREDICTABLE TRY AGAIN \n");}
 
@@ -26,8 +29,9 @@ do {
 
 	elseif ($guess == $rand) {fwrite(STDOUT, "WELL DONE! \n");}
 
+} 	while ($guess != $rand);
 
-} while ($guess != $rand);
+fwrite(STDOUT, "IT TOOK YOU $tries TRIES \n");
 
 //If user guesses the correct number, output "WELL DONE!"
 
