@@ -21,3 +21,5 @@ if ($x > 0 || $x < 10){
 if ($y > $z || $y < $z) {
 	echo "$y is greater than or less than $z\n";
 }
+
+//if $x
