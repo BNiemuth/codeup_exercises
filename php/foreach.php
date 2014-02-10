@@ -24,13 +24,31 @@ foreach ($things as $datatype) {
 
 // }
 
-	if (is_scalar($datatype)) {
-		echo "{$datatype} \n";
+//Step 3 (is_scalar)
 
+	// if (is_scalar($datatype)) {
+	// 	echo "{$datatype} \n";
+
+	// }
+
+	// 	else {
+	// 		echo "\n";
+	// 		 }
+	// }
+	
+//Step 4
+
+		if (is_scalar($datatype)) {
+			echo "{$datatype} \n";
+		}
+
+		elseif (is_null ($datatype)) {
+			echo "\n"; 
+		}
+
+		elseif (is_array($datatype)) {
+			echo "Array\n";
+		}
 	}
 
-		else {
-			echo "\n";
-			 }
-	}		 
 ?>
