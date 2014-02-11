@@ -42,10 +42,10 @@ function modulus($a, $b) {
     }
 }
 
-	add(10,2);
-	subtract(10,2);
-	multiply(10,2);
-	divide(10,2);
-	modulus(10,2);
+	echo add(10,2);
+	echo subtract(10,2);
+	echo multiply(10,2);
+	echo divide(10,2);
+	echo modulus(10,2);
 
 ?>
