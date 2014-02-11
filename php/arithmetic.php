@@ -1,7 +1,11 @@
 <?php
 
 function add($a, $b) {
+  if (is_numeric($a) && is_numeric($b)) {
     echo ($a + $b) . "\n";
+  } else {
+	echo "ERROR: Both arguments must be numbers\n";
+  }
 }
 
 function subtract($a, $b) {
