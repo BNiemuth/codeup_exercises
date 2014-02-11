@@ -19,9 +19,15 @@ function divide($a, $b) {
     echo ($a / $b) . "\n";
 }
 
-add(10,2);
-subtract(10,2);
-multiply(10,2);
-divide(10,2);
+function modulus($a, $b) {
+    // Add code here
+    echo ($a % $b) . "\n";
+}
+
+	add(10,2);
+	subtract(10,2);
+	multiply(10,2);
+	divide(10,2);
+	modulus(10,2);
 
 ?>
