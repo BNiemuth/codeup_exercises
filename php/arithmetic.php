@@ -9,23 +9,37 @@ function add($a, $b) {
 }
 
 function subtract($a, $b) {
-    // Add code here
+   if (is_numeric($a) && is_numeric($b)) {
     echo ($a - $b) . "\n";
+  } else {
+  	echo "ERROR: Both arguments must be numbers\n";
+  }
 }
 
 function multiply($a, $b) {
-    // Add code here
+   if (is_numeric($a) && is_numeric($b)) {
     echo ($a * $b) . "\n";
-}
+  } else {
+  	echo "ERROR: Both arguments must be numbers\n";
+  }
+ }
 
 function divide($a, $b) {
-    // Add code here
+    if (is_numeric($a) && is_numeric($b)) {
     echo ($a / $b) . "\n";
+  }	elseif  ($b == 0) {
+  	echo "ERROR: Division by 0 isn't permitted :(\n";
+  }	else {
+   	echo "ERROR: Both arguments must be numbers\n";
+   }
 }
 
 function modulus($a, $b) {
-    // Add code here
+    if (is_numeric($a) && is_numeric($b)) {
     echo ($a % $b) . "\n";
+  }  else {
+    echo "ERROR: Both arguments must be numbers\n";	
+    }
 }
 
 	add(10,2);
