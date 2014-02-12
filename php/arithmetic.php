@@ -1,5 +1,9 @@
 <?php
 
+function ParamsAreValid($a , $b) {
+	return (is_numeric ($a) && is_mumeric ($b));
+}
+
 function add($a, $b) {
   if (is_numeric($a) && is_numeric($b)) {
     return $a + $b . "\n";

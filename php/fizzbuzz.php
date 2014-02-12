@@ -7,7 +7,6 @@ for ($i = 1; $i <= 100; $i++){
 //Check for %3 & %5 first.
 
 	if($i % 3 ==0 && $i % 5 ==0) { 
-		
 		echo "FizzBuzz\n";
 
 //If % 5 echo Buzz.
