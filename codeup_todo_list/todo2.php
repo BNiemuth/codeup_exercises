@@ -58,7 +58,7 @@ do {
         echo 'Enter item: ';
         // Add entry to list array
         $items[] = get_input();
-        echo 'Add item to the (B)eginning or (E)nd ' . PHP_EOL;
+        echo 'Add item to the (B)eginning or (E)nd? ' . PHP_EOL;
         if ($input == 'B')
         array_unshift();
         elseif ($input == 'E')
@@ -74,7 +74,7 @@ do {
 
     } elseif ($input == 'S') {
         //Chose sort method
-        echo 'Sort (A)-Z or (Z)-A: ';
+        echo 'Sort (A)-Z or (Z)-A:? ';
         $input = get_input();
         if ($input == 'A') {
             sort ($items);
