@@ -3,9 +3,9 @@
 // Converts array into list n1, n2, ..., and n3
 function humanized_list($input) {
   // My awesome solution goes here!
-$exploded = explode(',',$input);
+$exploded = explode(', ',$input);
 $last = array_pop($exploded);
-return implode(',', $exploded) . ", and $last";
+return implode(', ', $exploded) . ", and $last";
 }
 
 // List of famous peeps
